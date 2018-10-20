@@ -17,7 +17,7 @@ $tasklist = [
         echo "<hr>";
 
 
-        echo "<strong>2. Display all elements like image 2</strong><br><br>";
+        echo "<strong>2. Display all elements, like image 2.</strong><br><br>";
 
         foreach($tasklist as $key => $value) {
             echo  "<li>" . $tasklist[$key]["task"]. "</li>";
@@ -33,22 +33,16 @@ $tasklist = [
                         echo "<br>";
                         foreach($tasklist as $key => $value) {
                             echo  "<li>" . $tasklist[$key]["task"] . "</li>";
-
-                           
                         }
                     }
-                    
                 }
-               
             }
-          
-            
         }
 
 
         echo "<hr>";
 
-        echo "<strong>3. If status is true, display the task, if the status is false, do NOT display</strong><br><br>";
+        echo "<strong>3. If status is true, display the task. Otherwise, do NOT display.</strong><br><br>";
         foreach($tasklist as $key => $value) {
             if ($tasklist[$key]["status"] == true) {
                 echo  $tasklist[$key]["task"] . "<br>";

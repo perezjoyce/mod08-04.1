@@ -1,5 +1,5 @@
 <?php
-echo "<strong>ACTIVITY 1: Given with this array, display
+echo "<strong>ACTIVITY 1: Given this array, display
 each of the countries together with
 its corresponding capital.</strong><br><br>";
 
@@ -16,14 +16,14 @@ $country_city = [
 ];
 
 
-echo "<strong>1. Display all elements</strong><br><br>";
+echo "<strong>1. Display all elements.</strong><br><br>";
 foreach (array_flip($country_city) as $country => $city) {
     echo "$country is in $city <br>";
 }
 
 echo "<hr>";
 
-echo "<strong>2. Display all elements like image 2</strong><br><br>";
+echo "<strong>2. Display all elements, like in image 1.</strong><br><br>";
 foreach (array_flip($country_city) as $country => $city) {
     echo "$country is in $city <br>";
     if ($city === "Argentina") {
