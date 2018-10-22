@@ -17,9 +17,8 @@ $country_city = [
 
 
 echo "<strong>1. Display all elements.</strong><br><br>";
-foreach (array_flip($country_city) as $country => $city) {
-    echo "$country is in $city <br>";
-}
+foreach (array_flip($country_city) as $country => $city) echo "$country is in $city <br>";
+
 
 echo "<hr>";
 
@@ -27,8 +26,7 @@ echo "<strong>2. Display all elements, like in image 1.</strong><br><br>";
 foreach (array_flip($country_city) as $country => $city) {
     echo "$country is in $city <br>";
     if ($city === "Argentina") {
-        foreach (array_flip($country_city) as $country => $city) {
-            echo "$country is in $city <br>";
-        } 
+        foreach (array_flip($country_city) as $country => $city) echo "$country is in $city <br>";
+        
     }
 }

@@ -36,9 +36,8 @@ $tasklist = [
         echo "<br><br>";
 
         echo "<strong>1.c. Display all elements using FOREACH.</strong><br><br>";
-        foreach($tasklist as $key => $value) {
-            echo  $tasklist[$key]["task"] . "<br>";
-        }
+        foreach($tasklist as $key => $value) echo  $tasklist[$key]["task"] . "<br>";
+        
 
 
 
@@ -77,7 +76,7 @@ $tasklist = [
 
         echo "<br><br>";
 
-        echo "<strong>3.b. Same as above but using FOR.</strong><br><br>";
+        echo "<strong>3.b. Same as above but using FOR LOOP.</strong><br><br>";
         for($i = 0; $i < count($tasklist); $i++) {
            if ($tasklist[$i]["status"] == true) echo $tasklist[$i]["task"] . "<br>";
         }
